@@ -16,7 +16,7 @@ hr {
   border: 0;
   border-top: 1px solid #1b1b1b;
   color: #1b1b1b;
-  width: 15%; }
+  width: 10%; }
 
 small {
   display: block;
@@ -38,12 +38,13 @@ header {
     height: 70px;
     background: #1d1d1d;
     margin: 0px;
-    padding: 0px 10px;
+    padding: 0px 20px;
     z-index: 50;
     transition: all 0.2s ease-in-out; }
     header nav h1 {
       display: inline-block;
       font-family: PalatinoLT-Roman;
+      font-weight: 200;
       font-size: 1.2em;
       color: #f3f3f3;
       text-transform: uppercase; }
@@ -63,7 +64,7 @@ header {
           color: #988468;
           text-transform: uppercase;
           text-decoration: none;
-          padding: 5px 10px;
+          padding: 5px 15px;
           transition: 0.2s all ease-in-out; }
         header nav ul li a:hover {
           color: #f3f3f3; }
@@ -90,18 +91,22 @@ div.hero {
   width: 100%;
   height: 100%;
   position: relative;
-  background: #93a1a8 url("../images/desktop_hero.jpg") no-repeat 0% 75%;
-  background-size: cover; }
+  background: #93a1a8 url("../images/desktop_hero.jpg") no-repeat 10% 50%;
+  background-size: 100%; }
 
 div.hero-text {
-  margin-left: 35%; }
+  margin-left: 30%; }
   div.hero-text h1 {
     letter-spacing: 2px;
     font-size: 6em;
     font-family: PalatinoLT-Light;
+    font-weight: 100;
+    line-height: 0.9;
+    letter-spacing: -1px;
     color: #f3f3f3;
     text-transform: uppercase; }
     div.hero-text h1 span {
+      font-size: 0.7em;
       text-transform: none; }
   div.hero-text hr {
     width: 25%;
@@ -110,29 +115,35 @@ div.hero-text {
     color: #1a1a1a;
     font-family: PalatinoLT-Light;
     clear: both;
-    font-size: 2.5em; }
+    font-size: 2.25em;
+    letter-spacing: -1px; }
   div.hero-text small {
     color: #1b1b1b;
     font-family: AvenirLTStd-Medium;
     display: block;
-    font-size: 1em; }
+    font-size: 1em;
+    margin-top: 40%; }
 
 div.content {
   background: #f3f3f3;
   position: relative; }
 
 div.container {
-  width: 960px;
+  width: 1080;
   margin: 0 auto; }
   div.container h1 {
     letter-spacing: 2px; }
   div.container h2 {
     font-family: PalatinoLT-Roman;
-    font-size: 4em;
+    font-weight: 200;
+    font-size: 3.5em;
+    line-height: 1;
     text-transform: uppercase; }
   div.container p {
     font-family: PalatinoLT-Roman;
-    font-size: 2.25em; }
+    font-size: 2em;
+    font-weight: 100;
+    line-height: 1.4; }
   div.container img {
     display: block;
     margin: 0 auto;
@@ -141,20 +152,25 @@ div.container {
   div.container small {
     font-family: AvenirLTStd-Medium;
     display: block;
-    font-size: 1em; }
+    font-size: 1.15em;
+    font-weight: 100; }
 
 div.container-wide {
-  width: 1080px;
+  width: 1200px;
   margin: 0 auto; }
   div.container-wide h2 {
     font-family: PalatinoLT-Roman;
     font-size: 4em;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    line-height: 0.95; }
   div.container-wide h3 {
     color: #988468;
     font-family: AvenirLTStd-Medium;
+    font-weight: 100;
     text-transform: uppercase;
-    font-size: 1.25em; }
+    font-size: 1.15em;
+    letter-spacing: 1px;
+    line-height: 0.1; }
   div.container-wide div.events {
     display: flex;
     justify-content: space-between; }
@@ -162,15 +178,18 @@ div.container-wide {
       width: 30%; }
       div.container-wide div.events div.event h1 {
         font-family: PalatinoLT-Light;
-        font-weight: lighter;
-        font-size: 2em;
+        font-weight: 100;
+        font-size: 2.25em;
         text-transform: uppercase; }
       div.container-wide div.events div.event h2 {
         font-family: PalatinoLT-Light;
-        font-size: 2em; }
+        font-weight: 100;
+        font-size: 2.25em; }
       div.container-wide div.events div.event p {
         font-family: AvenirLTStd-Book;
-        font-size: 1.25em; }
+        font-size: 1.25em;
+        color: #999;
+        line-height: 1.75; }
       div.container-wide div.events div.event button {
         font-family: AvenirLTStd-Medium;
         margin: 40px 0px;
@@ -179,11 +198,13 @@ div.container-wide {
         color: #988468;
         background: #f2f2f2;
         text-transform: uppercase;
-        padding: 20px 10px;
+        padding: 15px 40px;
         letter-spacing: 2px;
-        border: 3px solid #988468;
+        border: 2px solid #988468;
         font-weight: bold;
         transition: 0.2s all ease-in-out; }
+      div.container-wide div.events div.event button:after {
+        content: " >"; }
       div.container-wide div.events div.event button:hover {
         color: #f2f2f2;
         background: #988468;
@@ -192,13 +213,20 @@ div.container-wide {
 footer {
   background: #1b1b1b; }
   footer h1 {
+    font-size: 3em;
     font-family: PalatinoLT-Light;
-    color: #fff; }
+    color: #fff;
+    font-weight: 100;
+    line-height: 0.9; }
+    footer h1 span {
+      font-size: 0.7em; }
   footer .container-wide p {
+    letter-spacing: 2px;
     color: #988468;
     font-size: 1em;
     font-family: PalatinoLT-Roman; }
   footer .container-wide small {
+    font-size: 0.9em;
     font-family: AvenirLTStd-Book; }
 
 .close, .menu {
@@ -302,11 +330,13 @@ footer {
     background: #93a1a8 url("../images/mobile_hero.jpg") no-repeat 50% 70%;
     background-size: 100%; }
   div.container {
-    width: 300px; }
+    width: 90%;
+    padding: 0 20px; }
     div.container img {
-      max-width: 300px; }
+      max-width: 90%; }
   div.container-wide {
-    width: 400px; }
+    width: 90%;
+    padding: 0 20px; }
     div.container-wide div.events div.event {
       width: 100%; }
   .event:nth-child(n+2) {
@@ -314,13 +344,15 @@ footer {
 
 @media screen and (max-width: 420px) {
   html {
-    font-size: 0.4em; }
+    font-size: 0.6em; }
   div.container {
-    width: 200px; }
+    width: 95%;
+    padding: 0 20px; }
     div.container img {
-      max-width: 200px; }
+      max-width: 95%; }
   div.container-wide {
-    width: 300px; }
+    width: 95%;
+    padding: 0 20px; }
     div.container-wide div.events div.event {
       width: 100%; }
   header nav ul li a {
@@ -362,6 +394,10 @@ footer {
 
 .grey {
   color: #666666 !important; }
+
+.light {
+  font-family: Swiss721BT-Thin;
+  color: #666666; }
 
 header nav i.hide {
   display: none; }
